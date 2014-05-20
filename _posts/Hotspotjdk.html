@@ -1,0 +1,113 @@
+---
+　　layout: default
+　　title: Hotspot jdk 参数map
+---
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003" xmlns:cor="http://schemas.mindjet.com/MindManager/Core/2003">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Outline of Hotspot jdk</title>
+<style type="text/css">
+		body
+		{
+			font-family: Times, serif;
+			font-size: 12px;
+			line-height: 1.333em;
+		}
+
+		p
+		{
+			max-width: 56em;
+			margin: 0 0 0 0;
+		}
+		
+		div.title
+		{
+			font-family: helvetica, arial, verdana, sans-serif;
+			font-weight: normal;			
+			font-size: 24px;
+			text-align: center;
+		}
+
+		h1, h2, h3, h4, h5, h6
+		{
+			font-family: helvetica, arial, verdana, sans-serif;
+			font-weight: normal;
+		}
+
+		h1
+		{
+			font-size: 200%;
+		}
+
+		h2
+		{
+			font-size:	 150%;
+			line-height: 1.778 em;
+		}
+		
+		h3
+		{
+			font-size:	 133.333%;
+			line-height: 1em;
+		}
+		
+		h4
+		{
+			font-size:	 116.6667%;
+			line-height: 1.143em;
+		}
+		
+		h5
+		{
+			font-weight: bold;
+			font-style: italic;
+		}
+		
+		h6
+		{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<div class="title">Hotspot jdk</div>
+<h1>Heap</h1>
+<h2>-Xms -Xmx</h2>
+<h2>-XX:NewRadio</h2>
+<h2>Perm</h2>
+<h3>-XX:PermSize</h3>
+<h3>-XX:MaxPermSize</h3>
+<h2>Young</h2>
+<h3>-Xmn</h3>
+<h3>-XX:SurvivorRadio</h3>
+<h3>-XX:-UseAdaptiveSizePolicy</h3>
+<h2>Stack</h2>
+<h3>-Xss</h3>
+<h1>GC</h1>
+<h2>-XX:+UseParallelOldGC</h2>
+<h2>-XX:+UseParNewGC</h2>
+<h2>-XX:+UseParallelGC</h2>
+<h2>-XX:+UseConcMarkSweepGC</h2>
+<h3>-XX:UseCMSCompactAtFullCollection</h3>
+<h3>-XX:CMSInitiatingOccupancyFraction</h3>
+<h3>-XX:+CMSClassUnloadingEnabled</h3>
+<h3>-XX:ParallelCMSThreads</h3>
+<h2>-XX:+UseSerialGC</h2>
+<h2>-XX:ParallelGCThreads</h2>
+<h1>performance</h1>
+<h2>-XX:+UseBiasedLocking</h2>
+<h2>-XX:+AggressiveHeap</h2>
+<h2>-XX:CompileThreshold</h2>
+<h1>log</h1>
+<h2>-verbose:gc</h2>
+<h2>-XX:+PrintGCDetail</h2>
+<h2>-XX:+PrintCompilation</h2>
+<h2>-XX:-PrintGCTimeStamps</h2>
+<h2>-Xloggc:&lt;file&gt;</h2>
+<h2>XX:+PrintTenuringDistribution</h2>
+<h1>trace</h1>
+<h2>-XX:+TraceClassLoading</h2>
+<h2>-XX:+TraceClassUnLoading</h2>
+</body>
+</html>
